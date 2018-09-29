@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/icon_zoom_out"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.3"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/icon_close"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/youtubPlayLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/youtubPlayImageView"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/icon_youtub_play"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/accumulateTextView"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="18dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="32:51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.3"
+            android:gravity="center">
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/scheduleIndicatorSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isb_indicator_color="#00212121"
+                app:isb_indicator_text_color="#00ffffff"
+                app:isb_indicator_text_size="18sp"
+                app:isb_max="100"
+                app:isb_min="0"
+                app:isb_thumb_color="#ffffff"
+                app:isb_thumb_size="15dp"
+                app:isb_tick_marks_size="13dp"
+                app:isb_tick_texts_color="@color/colorAccent"
+                app:isb_tick_texts_size="15sp"
+                app:isb_ticks_count="1"
+                app:isb_track_background_color="#212121"
+                app:isb_track_background_size="2dp"
+                app:isb_track_progress_color="#ffffff"
+                app:isb_track_progress_size="3dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reciprocalTextView"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="18dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="-11:11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/youtubFullScreenImageView"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/icon_full_screen"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#212121"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:text="結愛·千歲大人的初戀"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+        <com.home.youtubeplayerdemo.widget.MarqueeTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="-1"
+            android:singleLine="true"
+            android:text="結愛·千歲大人的初戀 01丨 Moonshine and Valentine 01（主演:宋茜 Victoria Song,黃景瑜 Johnny）【未刪減版】"
+            android:textColor="#bcbcbc"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:background="@drawable/bottom_data1"
+                android:layout_width="match_parent"
+                android:layout_height="287dp"/>
+
+            <FrameLayout
+                android:background="@drawable/bottom_data2"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
