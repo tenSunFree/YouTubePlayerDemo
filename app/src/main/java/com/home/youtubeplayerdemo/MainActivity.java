@@ -18,7 +18,7 @@ import com.warkiz.widget.SeekParams;
 
 public class MainActivity extends YouTubeBaseActivity {
 
-    private final String YOUTUBE_API_KEY = "AIzaSyAp5zxkvuJN-f470qj1YC2v_SsOHM3sgaI";
+    private final String YOUTUBE_API_KEY = "填入申請的API金鑰";
     private final String YOUTUBE_VIDEO_CODE = "ME_YsfRN9lY";
     private int currentSeekBarProgress, currentDurationMillis, currentTimeMillis;
     private boolean onPlaying = false;
